@@ -1,0 +1,477 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*App Styling for the background*/
+.app {
+  background-color: rgb(23, 25, 35);
+  height: 100vh;
+  width: 100%;
+}
+/*################################*/
+
+/*Styling for what displays when logged in*/
+.signed-in-app {
+  height: 100%;
+  width: 100%;
+}
+/*################################*/
+
+/*bar-row Formatting*/
+.bar-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 4%;
+}
+
+/*Logout Formatting (element 1 in bar-row)*/
+.logout-and-text-div {
+  height: 96%;
+  flex-basis: 15%;
+  color: rgb(203, 199, 199);
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+
+.logout-text {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 67%;
+  height: 100%;
+  font-size: 1.4vh;
+}
+
+.logout-button-div {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 33%;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  margin-top: 0.2%;
+}
+
+.logout-button {
+  background-color: rgb(23, 25, 35);
+  color: rgb(203, 199, 199);
+  outline: none;
+  border: 1px solid rgb(203, 199, 199);
+  font-size: 0.8vw;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+/*Search Box Formatting (element 2 in bar-row)*/
+.search-box-div {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: right;
+  margin-top: 0.1%;
+}
+
+.search-box {
+  width: 50%;
+  margin-right: 7%;
+  height: 100%;
+}
+
+/*Timeout Button Formatting (element 3 in bar-row)*/
+.timeout-div {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 15%;
+  justify-content: left;
+  width: 15%;
+  height: 100%;
+  margin-top: 0.05%;
+}
+
+.timeout-button {
+  background-color: rgb(23, 25, 35);
+  color: rgb(203, 199, 199);
+  outline: none;
+  border: 1px solid rgb(203, 199, 199);
+  font-size: 0.8vw;
+  cursor: pointer;
+  width: 40%;
+  height: 96%;
+}
+
+/*Percent Loss Formatting (element 4 in bar-row)*/
+.percent-loss-div {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 10%;
+  margin-top: 0.05%
+}
+
+.percent-loss-text-box {
+  background-color: rgb(23, 25, 35);
+  color: rgb(203, 199, 199);
+  outline: none;
+  border: 1px solid rgb(203, 199, 199);
+  font-size: 1.5vw;
+  cursor: pointer;
+  width: 40%;
+  height: 90%;
+  text-align: center;
+}
+
+.percent-symbol {
+  display: flex;
+  color: rgb(203, 199, 199);
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1vw;
+}
+
+/*Clock Formatting (element 4 in bar-row)*/
+.clocks {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 10%;
+  white-space: nowrap;
+  justify-content: right;
+  color: rgb(203, 199, 199);
+}
+
+.date-clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  color: rgb(203, 199, 199);
+}
+
+.time-clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  color: rgb(203, 199, 199);
+}
+
+/*################################*/
+
+/*Chart Formatting*/
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-basis: 50%;
+}
+
+.flex-chart-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.chart {
+  width: 65%;
+  height: 25vh;
+}
+/*################################*/
+
+/*Position Table and Equity Formatting*/
+.pos-equity-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 1.9%;
+  flex-basis: 30%;
+}
+
+.position-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  flex-basis: 60%;
+  color: rgb(203, 199, 199);
+  background-color: rgb(23, 25, 35);
+}
+
+.positions-header{
+  margin-left: 2%;
+}
+
+.equity {
+  display: flex;
+  color: rgb(203, 199, 199);
+  flex-direction: row;
+  justify-content: right;
+  flex-basis: 15%;
+}
+/*################################*/
+
+/*Order Table Formatting*/
+.trading-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 25%;
+  margin-right: 2%;
+}
+
+.orders-trading-buttons-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: .5%;
+  flex-basis: 20%;
+}
+
+.orders-table-div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: right;
+  margin-top: 1%;
+}
+
+.orders-table-cancel-button {
+  background-color: rgb(23, 25, 35);
+  color: red;
+}
+
+.orders-header {
+  margin-left: 2.5%;
+}
+/*################################*/
+
+/*Trading Button Formatting*/
+.trading-buttons-div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: right;
+}
+
+.trading-buttons-align {
+  margin-left: 65%;
+  margin-top: 1%;
+}
+
+.trading-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+/*################################*/
+
+/*Symbol and Flatten Formatting*/
+.symbol-and-flatten {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  justify-content: center;
+}
+
+.symbol-input-div {
+  display: flex;
+}
+
+.symbol-text {
+  width: 100%;
+  height: 4vw;
+  background-color: rgb(23, 25, 35);
+  color: rgb(203, 199, 199);
+  outline: none;
+  border: 1px solid rgb(203, 199, 199);
+  font-size: 1vw;
+  text-align: center;
+  margin-left: 14%;
+}
+
+.flatten-button-div {
+  display: flex;
+}
+
+.flatten-button {
+  width: 90%;
+  height: 4vw;
+  background-color: rgb(23, 25, 35);
+  border-color: rgb(203, 199, 199);
+  border-width: 1px;
+  color: rgb(203, 199, 199);
+  font-size: 1vw;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 14%;
+}
+/*################################*/
+
+/*Quantity, Price, Stop Formatting*/
+.qty-price-stop-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.input-style {
+  background-color: rgb(23, 25, 35);
+  color: rgb(203, 199, 199);
+  outline: none;
+  border: 1px solid rgb(203, 199, 199);
+  font-size: 1vw;
+  text-align: center;
+  cursor: pointer;
+  width:6vw;
+  height: 30%;
+}
+/*################################*/
+
+/*Buy and Sell Button Formatting*/
+.buy-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.buy-button-style {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 8px;
+  width: 8vw;
+  background-color: rgb(37, 166, 154);
+  font-size: 24px;
+  font-family: Helvetica, sans-serif;
+  padding: 0.5em 0.4em;
+  margin-bottom: 0.4em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sell-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.sell-button-style {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 8px;
+  width: 8vw;
+  background-color: rgb(237, 83, 82);
+  font-size: 24px;
+  font-family: Helvetica, sans-serif;
+  padding: 0.5em 0.4em;
+  margin-bottom: 0.4em;
+  text-align: center;
+  cursor: pointer;
+}
+/*################################*/
+
+/*Overlay Formatting*/
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgb(237, 83, 82);
+  height: 7vh;
+  width: 10vw;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: navajowhite;
+  border-width: 3px;
+  font-size: 1vw;
+
+}
+/*################################*/
+
+/*screener and charts-and-buttons Formatting*/
+.screener-and-charts-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 96%;
+}
+.screener {
+  max-height: 100%;
+  contain: content;
+  flex-basis: 33%;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.charts-and-buttons {
+  flex-basis: 67%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  height: 40px;
+  border-color: gray;
+  border-width: 1px;
+}
+
+.watchlist-symbol {
+  color: rgb(203, 199, 199);
+}
+
+.watchlist-1m {
+  color: rgb(203, 199, 199);
+}
+
+.watchlist-5m {
+  color: rgb(203, 199, 199);
+}
+
+.watchlist-15m {
+  color: rgb(203, 199, 199);
+}
+
+.watchlist-1h {
+  color: rgb(203, 199, 199);
+}
+
+.watchlist-4h {
+  color: rgb(203, 199, 199);
+}
+
+.watchlist-1d {
+  color: rgb(203, 199, 199);
+}
+
+.watchlist-1w {
+  color: rgb(203, 199, 199);
+}
+
+.watchlist-1M {
+  color: rgb(203, 199, 199);
+}
+
+.super-app.positive {
+  color: rgb(37, 166, 154)
+}
+
+.super-app.negative {
+  color: rgb(237, 83, 82);
+}
+
+.super-app.neutral {
+  color: rgb(203, 199, 199);
+}
+
+.super-app-neutral {
+  color: rgb(203, 199, 199);
+}
+
+.watchlist-row {
+  height: 10px;
+}
+
+.watchlist {
+  display: flex;
+  flex-direction: column;
+}
