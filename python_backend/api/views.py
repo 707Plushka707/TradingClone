@@ -32,8 +32,8 @@ import websockets
 
 # Create your views here.
 
-binance_api_key = "LxxlvPJTckWPKGTEsoIWa5eCpytCTDqAizP7JAzuzGKLKZiPhx368sWTHABV1vMN"
-binance_api_secret = "a30pZsNVNctmHKKuFCabCfbrLWyCVgCSWaH2UFfpatS4fSaQJF9kOXfJrWIOsoIe"
+binance_api_key = "Redacted ;)"
+binance_api_secret = ""
 
 client = Client(binance_api_key, binance_api_secret)
 
